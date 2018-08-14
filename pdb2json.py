@@ -4,9 +4,7 @@ import atomium
 from django.urls import re_path, path
 from django.http import JsonResponse
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = binascii.hexlify(os.urandom(24)).decode()
-VERSION = "0.1.0"
 ALLOWED_HOSTS = []
 DEBUG = True
 ROOT_URLCONF = __name__
