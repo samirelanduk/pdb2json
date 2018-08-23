@@ -8,7 +8,7 @@ Protein structures are stored by the likes of the [RCSB](https://www.rcsb.org/) 
 
 However, to use them you need to have a parser like [atomium](https://atomium.samireland.com/) or [biopython](https://biopython.org/) installed, which can read these file formats. For the structural biologist on the go, this can be an inconvenience.
 
-JSON is the modern web's *lingua franca*. Data structures in the form of JSON can be read and understood by pretty much any language. So, wouldn't it be wonderful if the RCSB protein structures could be accessed as JSON objects.
+JSON is the modern web's *lingua franca*. Data structures in the form of JSON can be read and understood by pretty much any language. So, wouldn't it be wonderful if the RCSB protein structures could be accessed as JSON objects?
 
 Well they can now.
 
