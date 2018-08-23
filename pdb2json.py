@@ -1,6 +1,9 @@
 import os
+import sys
 import binascii
 import atomium
+from django.core.wsgi import get_wsgi_application
+from django.core.management import execute_from_command_line
 from django.urls import re_path, path
 from django.http import JsonResponse
 
@@ -35,3 +38,8 @@ urlpatterns = [
  path("", root),
  re_path(r"^(?P<id>.*)/?", pdb),
 ]
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", __name__)
+application = get_wsgi_application()
+
+execute_from_command_line(sys.argv)
