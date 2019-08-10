@@ -1,3 +1,3 @@
 django==2.1
-atomium==0.11
+atomium==1.0.0
 gunicorn
