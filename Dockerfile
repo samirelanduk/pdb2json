@@ -8,7 +8,7 @@ COPY ./ ./
 
 RUN sed -i s/'DEBUG = True'/'DEBUG = False'/g pdb2json.py
 
-RUN sed -i s/'ALLOWED_HOSTS = \[\]'/'ALLOWED_HOSTS = \["pdb2json.samireland.com"]'/g pdb2json.py
+RUN sed -i s/'ALLOWED_HOSTS = \[\]'/'ALLOWED_HOSTS = \["*"]'/g pdb2json.py
 
 RUN conda install numpy
 
